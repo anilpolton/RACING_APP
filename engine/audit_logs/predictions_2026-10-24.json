@@ -1,0 +1,23 @@
+[
+  {
+    "meeting": "TAB Turffontein",
+    "race_number": 8,
+    "race_name": "FM Classified Stakes (1160m)",
+    "logged_at": "15:32:48",
+    "top_pick": {
+      "number": 1,
+      "name": "Staggerwing",
+      "odds": 1.67,
+      "min_bet": 10.0
+    },
+    "trifecta_box": {
+      "runners": [
+        1,
+        3,
+        4
+      ],
+      "min_bet": 6.0
+    },
+    "value_bet": null
+  }
+]

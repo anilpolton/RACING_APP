@@ -1,0 +1,86 @@
+[
+  {
+    "meeting": "Hollywoodbets Greyville",
+    "race_number": 1,
+    "race_name": "Lucky Fish Plinko Maiden Plate",
+    "logged_at": "17:43:49",
+    "top_pick": {
+      "number": 4,
+      "name": "Lady Nancy",
+      "odds": 1.83,
+      "min_bet": 10.0
+    },
+    "trifecta_box": {
+      "runners": [
+        4,
+        2,
+        7
+      ],
+      "min_bet": 6.0
+    },
+    "value_bet": null
+  },
+  {
+    "meeting": "Hollywoodbets Greyville",
+    "race_number": 4,
+    "race_name": "Bet With Tote Maiden Plate",
+    "logged_at": "17:43:49",
+    "top_pick": {
+      "number": 1,
+      "name": "J Lordi",
+      "odds": 2.2,
+      "min_bet": 10.0
+    },
+    "trifecta_box": {
+      "runners": [
+        1,
+        2,
+        3
+      ],
+      "min_bet": 6.0
+    },
+    "value_bet": null
+  },
+  {
+    "meeting": "Hollywoodbets Greyville",
+    "race_number": 5,
+    "race_name": "Pinkdrive Apprentice C Stakes",
+    "logged_at": "17:43:49",
+    "top_pick": {
+      "number": 3,
+      "name": "B Fiftytwo",
+      "odds": 2.8,
+      "min_bet": 10.0
+    },
+    "trifecta_box": {
+      "runners": [
+        3,
+        1,
+        5
+      ],
+      "min_bet": 6.0
+    },
+    "value_bet": null
+  },
+  {
+    "meeting": "Hollywoodbets Greyville",
+    "race_number": 6,
+    "race_name": "Gallop TV D Stakes",
+    "logged_at": "17:43:49",
+    "top_pick": {
+      "number": 3,
+      "name": "Preux Chavalier",
+      "odds": 2.25,
+      "min_bet": 10.0
+    },
+    "trifecta_box": {
+      "runners": [
+        3,
+        6,
+        1
+      ],
+      "min_bet": 6.0
+    },
+    "value_bet": null
+  }
+]
