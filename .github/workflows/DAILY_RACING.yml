@@ -1,0 +1,43 @@
+name: Antigravity Daily Racing Agent
+
+on:
+  schedule:
+    # 06:00 UTC = 08:00 AM South Africa Time (Morning Scan & PA Check)
+    - cron: '0 6 * * *'
+    # 22:00 UTC = 00:00 Midnight South Africa Time (Midnight P&L Audit)
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-racing-agent:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run Morning Racing Agent & PA Dispatch
+        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TARGET_EMAIL: ${{ secrets.TARGET_EMAIL }}
+        run: |
+          python daily_daemon.py --once
+
+      - name: Run Midnight P&L Audit & Reconciliation
+        if: github.event.schedule == '0 22 * * *'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TARGET_EMAIL: ${{ secrets.TARGET_EMAIL }}
+        run: |
+          python daily_daemon.py --midnight-audit
