@@ -19,5 +19,26 @@
       "min_bet": 6.0
     },
     "value_bet": null
+  },
+  {
+    "meeting": "TAB Turffontein",
+    "race_number": 9,
+    "race_name": "MR 74 Handicap (1160m)",
+    "logged_at": "16:46:07",
+    "top_pick": {
+      "number": 2,
+      "name": "Major Arcana",
+      "odds": 4.55,
+      "min_bet": 10.0
+    },
+    "trifecta_box": {
+      "runners": [
+        2,
+        1,
+        10
+      ],
+      "min_bet": 6.0
+    },
+    "value_bet": null
   }
 ]
